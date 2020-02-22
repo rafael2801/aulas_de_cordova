@@ -1,0 +1,34 @@
+#log{
+    margin-left:27em;
+    position: absolute;
+    color: purple;
+    font-size: 20px;
+    margin-top: em;
+}
+#lo{
+ 
+    color : red;
+    font-size:50px;
+    position : relative;
+    margin-left :13em;
+    
+}
+#cxdt{
+    margin-left: 40em;
+    position: relative;
+
+}
+#b{
+   
+    margin-left:46em ;
+  
+    
+    position : relative;
+}
+#body{
+    background:url("img/fund.png") ;
+    background-size: cover;
+    background-position: 0 100%;
+    position: absolute;
+  
+}
