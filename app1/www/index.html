@@ -1,48 +1,71 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="corcss.css">
-        <link rel="script" href="camera.html">
+
+<head>
+    <link rel="stylesheet" href="corcss.css">
+    <link rel="script" href="camera.html">
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>
         Projeto Cordova!
     </title>
-    </head>
-    <header>
-        <script>
-        function rl (){
+</head>
+<header>
+    <script type="text/javascript" src="js/login.js">
+
+        function rl() {
             let Usuario = document.getElementById("Usuario").value;
-            let senha = document.getElementById ("senha").value;
+            let senha = document.getElementById("senha").value;
             let usuval = ("spkiller");
             let senhaval = ("1234");
 
-            if (Usuario == usuval && senha == senhaval){
-            window.location.href="camera.html";
-            
-         }
-        else { 
-             alert ("Login falhou mano");
-        }
-        }
-        </script>
-    </header>
-    <body id="body">
-        
-        <p id = "lo">LOGIN</p>
-        <div id = "log">
-        Usuario :  </br>  </div>
-         <div id = "cxdt"><input type="text" id = "Usuario"> </div>  </br>
-        <div id = "log">
-        Senha : </br>
-        </div>
-        <div id = "cxdt">
-        <input type="password" id = "senha">  </br> </br>
-    </div>
-    <div id ="b">  <button type="button" onclick="rl()"> 
-                     Acessar
-        </button> </div>
+            if (Usuario == usuval && senha == senhaval) {
+                window.location.href = "camera.html";
 
-    
-    
+            }
+            else {
+                alert("Login falhou mano");
+            }
+        }
+    </script>
+</header>
+
+
+<!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+<div id="main">
+
+    <body id="body">
+
+        <p id="login">LOGIN</p>
+        <div id="loginlabelusuario">
+            Usuario : </div></br>
+        <div id="cxdtusuario"><input type="text" id="Usuario"> </div> </br>
+        <div id="loginlabelsenha">
+            Senha :
+        </div></br>
+        <div id="cxdtsenha">
+            <input type="password" id="senha"> </br> </br>
+        </div>
+        <div id="b"> <button type="button" onclick="rl()">
+                Acessar
+            </button> </div>
+
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
+        </div>
+
+        <!-- Use any element to open the sidenav -->
+        <span id="botaodropdown" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
     </body>
+</div>
+
+
+
+
+
 </html>

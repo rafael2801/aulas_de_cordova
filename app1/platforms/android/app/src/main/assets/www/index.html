@@ -2,6 +2,7 @@
 <html>
     <head>
         <link rel="stylesheet" href="corcss.css">
+        <link rel="script" href="camera.html">
     <meta charset="utf-8">
     <title>
         Projeto Cordova!
@@ -16,7 +17,8 @@
             let senhaval = ("1234");
 
             if (Usuario == usuval && senha == senhaval){
-            alert ("Ta logado bro");
+            window.location.href="camera.html";
+            
          }
         else { 
              alert ("Login falhou mano");
@@ -39,13 +41,7 @@
     <div id ="b">  <button type="button" onclick="rl()"> 
                      Acessar
         </button> </div>
-        <div class="app">
-            <h1>Cordova Camera</h1>
-            <button type="button" id="btnTirarFoto">Tirar foto</button> </br>
-            <img src="" id="imgHtmlTag" alt="aguardando img"></img>
-        </div>
-        <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
+
     
     
     </body>
